@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <!-- Start Css Files -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- Main Css Files -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- End Css Files -->
+    <!-- Font Google Files -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="page d-flex">
+        <div class="sidbar position-relative bg-white p-3">
+            <h3 class="text-center text fw-bold">Bahar</h3>
+            <ul>
+                <li>
+                    <a class="d-flex align-items-center text-black" title="Dashbord" href="index.html">
+                        <i class="fa-solid fa-chart-bar"></i>
+                        <span>Dashbord</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active d-flex align-items-center text-black" title="settings" href="settings.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-items-center text-black" title="profile" href="profile.html">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-items-center text-black" title="projects" href="project.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-items-center text-black" title="plans" href="plans.html">
+                        <i class="fa-regular fa-credit-card fa-fw"></i>
+                        <span>plans</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-100">
+            <div class="heading bg-white p-3 d-flex justify-content-between align-items-center">
+                <div class="div-search position-relative">
+                    <input class="position-relative rounded" placeholder="Type A Keyword" type="search" name="search"
+                        id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="d-flex align-items-center">
+                    <i class="fa-regular fa-bell fa-lg"></i>
+                    <img class="rounded-circle" src="./img/fallback-profile-img.png" alt="fallback-profile-img">
+                </div>
+            </div>
+            <h2 class="p-3 fw-bold fs-2">Settings</h2>
+            <div class="boxes boxes-margin  d-grid gap-3">
+                <!-- Start Site Control BoX -->
+                <div class="site-control">
+                    <div class="bg-white p-3 rounded shadow overflow-hidden">
+                        <h3 class="fw-bold text-capitalize">Site Control</h3>
+                        <p class="text-black-50 fw-semibold text-capitalize">control the website if there is maintenance
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="website-control text-capitalize">
+                                <span class="text-black fw-medium">website control</span>
+                                <p class="text-black-50"> close/open website and type the reason</p>
+                            </div>
+                            <div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch"
+                                        id="flexSwitchCheckChecked" checked>
+                                </div>
+                            </div>
+                        </div>
+                        <textarea id="site-control-message" placeholder="close message content"></textarea>
+                    </div>
+                </div>
+                <!-- End Site Control BoX -->
+                <!-- Start General Info -->
+                <div class="general-info">
+                    <div class="bg-white p-3 rounded shadow overflow-hidden">
+                        <h3 class="fw-bold text-capitalize">general info</h3>
+                        <p class="text-black-50 fw-semibold text-capitalize">general information about your account</p>
+                        <div class="info-form">
+                            <form action="">
+                                <div class="mb-3">
+                                    <label for="first-name">First Name</label>
+                                    <input type="text" name="" id="first-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" name="" id="last-name">
+                                </div>
+                                <div class="">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="" id="email" value="bhr@email.com" disabled>
+                                    <a class="change-email" href="">change</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- End General Info -->
+                <!-- Start Security Info -->
+                <div class="security-info">
+                    <div class="bg-white p-3 rounded shadow overflow-hidden">
+                        <h3 class="fw-bold text-capitalize">security info</h3>
+                        <p class="text-black-50 text-capitalize fw-semibold">security information about your account</p>
+                        <div class="password">
+                            <div class="title-password text-capitalize">
+                                <span>password</span>
+                                <p class="text-black-50">last change on 25/10/2021</p>
+                            </div>
+                            <a class="bg-primary" href="">change</a>
+                        </div>
+                        <div class="two-factor">
+                            <div class="title-factor text-capitalize">
+                                <span class="">two-factor authentication</span>
+                                <p class="text-black-50">enable/disable the feature</p>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckChecked" checked="">
+                            </div>
+                        </div>
+                        <div class="devices">
+                            <div class="title-devices text-capitalize">
+                                <span>devices</span>
+                                <p class="text-black-50">check the login deviceslist</p>
+                            </div>
+                            <a href="">devices</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Security Info -->
+                <!-- Start Social Info -->
+                <div class="social-info">
+                    <div class="bg-white p-3 rounded shadow overflow-hidden">
+                        <h3 class="text-capitalize fw-bold">social info</h3>
+                        <p class="text-black-50 fw-semibold text-capitalize">social media information</p>
+                        <div class="my-social">
+                            <div class="d-flex align-items-center mb-3 twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                                <input name="twitter" placeholder="Twitter Username" type="text" class="flex-fill">
+                            </div>
+                            <div class="d-flex align-items-center mb-3 facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <input placeholder="Facebook Username" type="text" class="flex-fill">
+                            </div>
+                            <div class="d-flex align-items-center mb-3 linkedin">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <input placeholder="Linkedin Username" type="text" class="flex-fill">
+                            </div>
+                            <div class="d-flex align-items-center mb-3 youtube">
+                                <i class="fa-brands fa-youtube"></i>
+                                <input placeholder="Youtube Username" type="text" class="flex-fill">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Social Info -->
+                <!-- Start widgets Control -->
+                <div class="widgets-control">
+                    <div class="bg-white p-3 rounded shadow overflow-hidden">
+                        <h3 class="fw-bold text-capitalize">widgets control</h3>
+                        <p class="text-black-50 text-capitalize fw-semibold">show/hide widgets</p>
+                        <div class="check-box text-capitalize fw-semibold">
+                            <div class="mb-3">
+                                <input type="checkbox" name="" id="one">
+                                <label for="one">quick draft</label>
+                            </div>
+                            <div class="mb-3">
+                                <input type="checkbox" name="" id="two">
+                                <label for="two">yearly targets</label>
+                            </div>
+                            <div class="mb-3">
+                                <input type="checkbox" name="" id="three">
+                                <label for="three">tickets statistics</label>
+                            </div>
+                            <div class="mb-3">
+                                <input type="checkbox" name="" id="four">
+                                <label for="four">latest news</label>
+                            </div>
+                            <div class="mb-3">
+                                <input type="checkbox" checked name="" id="five">
+                                <label for="five">latest task</label>
+                            </div>
+                            <div class="mb-3">
+                                <input type="checkbox" name="" id="six">
+                                <label for="six">top search items</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End widgets Control -->
+                <!-- Start Backup Manger -->
+                <div class="backup-manger">
+                    <div class="bg-white p-3 rounded shadow overflow-hidden">
+                        <h3 class="fw-bold text-capitalize">backup manger</h3>
+                        <p class="text-black-50 text-capitalize fw-semibold">control backup time and location</p>
+                        <div class="date-radio border-bottom pb-3">
+                            <div class="text-capitalize fw-semibold">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                        id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">daily</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                        id="exampleRadios2" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios2">weekly</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                        id="exampleRadios3" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios3">monthly</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chose-server p-2">
+                            <div class="d-flex align-items-center p-1 gap-1">
+                                <input type="radio" name="servers" id="zero">
+                                <div class="box">
+                                    <label for="zero">
+                                        <i class="fa-solid fa-server d-block mb-2"></i>
+                                        zero
+                                    </label>
+                                </div>
+                                <input type="radio" name="servers" checked id="megaman">
+                                <div class="box">
+                                    <label for="megaman">
+                                        <i class="fa-solid fa-server d-block mb-2"></i>
+                                        megaman
+                                    </label>
+                                </div>
+                                <input type="radio" name="servers" id="sigma">
+                                <div class="box">
+                                    <label for="sigma">
+                                        <i class="fa-solid fa-server d-block mb-2"></i>
+                                        sigma
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Backup Manger -->
+        </div>
+    </div>
+    </div>
+    <!-- JS Files -->
+    <!-- Font Awesome JS -->
+    <!-- <script src="./js/all.min.js"></script> -->
+    <!-- Bootstrap JS -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
